@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_9WmJcKOOEeuZqMl12sRUYA" name="Polimorfismo1">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_9bqPoKOOEeuZqMl12sRUYA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_AR414KOPEeuZqMl12sRUYA" name="ito.clases">
+    <packagedElement xmi:type="uml:Class" xmi:id="_D2Q7kKOPEeuZqMl12sRUYA" name="Figura" visibility="public" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_OLlJkKOPEeuZqMl12sRUYA" name="titulo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_VnHuEKOPEeuZqMl12sRUYA" name="cantidaLados" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_C7ancKOQEeuZqMl12sRUYA" name="medidaLado" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_iCFZ8KOPEeuZqMl12sRUYA" name="calculaArea" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="__bpU8KOPEeuZqMl12sRUYA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_4BVfgKOPEeuZqMl12sRUYA" name="calculaPerimetro" isAbstract="true">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_R9wlQKOQEeuZqMl12sRUYA" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_K9xUUKOQEeuZqMl12sRUYA" name="dsd"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_mUCFYKOREeuZqMl12sRUYA" name="Cuadrado">
+      <generalization xmi:type="uml:Generalization" xmi:id="_snQ-AKOREeuZqMl12sRUYA" general="_D2Q7kKOPEeuZqMl12sRUYA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_UNYMkKOSEeuZqMl12sRUYA" name="Triangulo">
+      <generalization xmi:type="uml:Generalization" xmi:id="_Wm1XQKOSEeuZqMl12sRUYA" general="_D2Q7kKOPEeuZqMl12sRUYA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iYSzIKOSEeuZqMl12sRUYA" name="altura" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
