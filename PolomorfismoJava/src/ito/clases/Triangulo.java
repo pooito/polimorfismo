@@ -83,5 +83,17 @@ public class Triangulo extends Figura {
 		return "Triangulo [Titulo=" + getTitulo() + ", altura=" + altura + ", Cantidad de Lados="
 				+ getCantidaLados() + ",Base=" + getMedidaLado() + "]";
 	}
+	@Override
+	public int compareTo(Figura o) {
+		// TODO Auto-generated method stub
+		float a1=this.calculaArea();
+		float a2=((Triangulo)o).calculaArea();
+		int compare=0;
+		if(a1<a2)
+			compare=-1;
+		else if(a1>a2)
+			compare=1;
+		return compare;
+	}
 
 }

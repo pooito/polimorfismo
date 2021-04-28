@@ -7,12 +7,13 @@ package ito.clases;
 
 // End of user code
 
+
 /**
  * Description of Figura.
  * 
  * @author rherrera
  */
-public abstract class Figura {
+public abstract class Figura implements Comparable<Figura> {
 	
 	/**
 	 * Description of the property titulo.

@@ -62,6 +62,19 @@ public class Cuadrado extends Figura {
 				+ "]";
 	}
 
+	@Override
+	public int compareTo(Figura o) {
+		// TODO Auto-generated method stub
+		float l1=this.getMedidaLado();
+		float l2=o.getMedidaLado();
+		int compare=0;
+		if(l1<l2)
+			compare=-1;
+		else if(l1>l2)
+			compare=1;
+		return compare;
+	}
+
 	// Start of user code (user defined methods for Cuadrado)
 
 	// End of user code
